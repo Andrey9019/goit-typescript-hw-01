@@ -4,7 +4,7 @@
 // let empty: null = null
 // let qwe: undefined= undefined
 function great(user) {
-  console.log(`hello ${user.name}`);
+    console.log(`hello ${user.name}`);
 }
 // type User = {
 //     name: string,
@@ -47,4 +47,63 @@ function great(user) {
 //     age: 25,
 //     role: "admin"
 // }
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// Lesson 2
+// type Fruits = {
+//     apples: number,
+//     banana: number,
+//     orange: number,
+// }
+// type FrozeGoods = {
+//     iceCream: number,
+//     fish: number,
+//     berry:number,
+// }
+// =>
+// type Goods = {
+//      [key:string]:number
+//  }
+// const fruits: Goods = {
+//     apples: 15,
+//     banana: 7,
+//     orange: 4
+// }
+// const frozeGoods: Goods = {
+//     iceCream: 30,
+//     fish: 6,
+//     berry:30,
+// }
+///
+// type MixeType = {
+//     [key: string]: string | number
+// }
+// const userInfo: MixeType = {
+//     name: `Bot`,
+//     age: 7,
+//     contry: `UA`,
+// }
+// const bookDetails: MixeType = {
+//     title: ` Bible`,
+//     page: 123,
+// }
+///
+// Genarics
+// function identity<T>(arg: T): T {
+//     return arg;
+// }
+// let output = identity<string>("hello")
+function reverse(items) {
+    return items.reverse();
+}
+let numbers = reverse([1, 2, 3, 4, 5]);
+let string = reverse([`a`, `b`, `c`, `d`]);
+//  extends and key of
 //# sourceMappingURL=index.js.map

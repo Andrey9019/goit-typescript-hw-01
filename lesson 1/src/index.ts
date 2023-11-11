@@ -96,7 +96,7 @@ function great(user:User): void {
 
 // type User = {
 //     name: string,
-//     age: number, 
+//     age: number,
 //     role?: string
 // }
 // const user: User = {
@@ -108,3 +108,86 @@ function great(user:User): void {
 //     age: 25,
 //     role: "admin"
 // }
+
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+// Lesson 2
+
+// type Fruits = {
+//     apples: number,
+//     banana: number,
+//     orange: number,
+// }
+
+// type FrozeGoods = {
+//     iceCream: number,
+//     fish: number,
+//     berry:number,
+// }
+
+// =>
+
+// type Goods = {
+//      [key:string]:number
+//  }
+
+// const fruits: Goods = {
+//     apples: 15,
+//     banana: 7,
+//     orange: 4
+// }
+
+// const frozeGoods: Goods = {
+//     iceCream: 30,
+//     fish: 6,
+//     berry:30,
+// }
+
+
+///
+
+// type MixeType = {
+//     [key: string]: string | number
+// }
+
+// const userInfo: MixeType = {
+//     name: `Bot`,
+//     age: 7,
+//     contry: `UA`,
+// }
+
+// const bookDetails: MixeType = {
+//     title: ` Bible`,
+//     page: 123,
+// }
+
+///
+
+
+// Genarics
+
+// function identity<T>(arg: T): T {
+//     return arg;
+// }
+
+// let output = identity<string>("hello")
+
+function reverse<K>(items:K[]):K[] {
+    return items.reverse()
+}
+
+let numbers = reverse<number>([1,2,3,4,5])
+let string = reverse<string>([`a`,`b`,`c`,`d`])
+
+//  extends and key of
+
+ 
